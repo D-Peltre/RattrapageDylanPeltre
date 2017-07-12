@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Game</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	</head>
+
+	<body>
+
+
+		<div class="texttop">
+			<div class="j1">
+				<label id="score1">Score J1</label>
+				</br>
+				<input type="text" id="name1" name="name1">
+				</br>
+				<input type="submit" value="ChangeP1" class="buttontoscore">
+			</div>
+
+			<div class="j2">		
+				<label id="score2">Score J2</label>
+				</br>
+				<input type="text" id="name2" name="name2">
+				</br>
+				<input type="submit" value="ChangeP2" class="buttontoscore">
+
+			</div>
+
+		</div>
+
+
+		<div class="textleft">
+			<div class="newgame">
+				<input type="submit" value="New Game" class="newgame" action="Lancerpartie()">
+			</div>
+
+			<div class="replaygame">		
+				<input type="submit" value="Replay Game" class="replaygame" action="Replaypartie()">
+
+			</div>
+
+		</div>
+					
+
+		<div class="game">
+
+			<div class="row">		
+				<button class="square"></button>
+				<button class="square"></button>
+				<button class="square"></button>
+			</div>
+
+			<div class="row">							
+				<button class="square"></button>
+				<button class="square"></button>
+				<button class="square"></button>
+			</div>
+
+			<div class="row">			
+				<button class="square"></button>
+				<button class="square"></button>
+				<button class="square"></button>
+			</div>
+
+		</div>
+
+		<script type="text/javascript">
+	
+			/*function Lancerpartie(){
+				var plateaudejeux =  new Array();
+			}
+
+			function Replaypartie(){
+
+			}
+
+			function */
+
+
+
+			function Fenetre() {
+				this.lancerPartie = function(){
+					Partie.plateauDeJeu = new Array[]; //avec une taille de 3/3
+				};
+				
+				this.creerJoueur = function(){			
+				};
+
+				this.rejouerPartie = function(){
+				};
+				this.panneauGrille = [];
+				this.panneauScore = [];
+			};
+
+			function Partie(){
+				
+				/*
+					// on cree le tableau bleu, contenant les lignes
+var grille = new Array();
+
+// on cree les lignes (tableau vert) les unes après les autres
+for(var i=0; i<9; i++)
+   grille[i] = new Array();
+
+// on parcourt les lignes...
+for(var i=0; i<9; i++)
+   // ... et dans chaque ligne, on parcourt les cellules
+   for(var j=0; j<9; j++)
+      grille[i][j] = 0;
+				*/
+				this.plateauDeJeu = new Array();
+				for(var i = 0; i<3; i++){
+					plateauDeJeu[i] = new Array();
+					for(var j = 0; j < 3; j++){
+					plateauDeJeu[i][j] = new cCase();
+					}
+				}
+
+				this.addAction = function(){
+				};
+				this.getAction = function(){
+				};
+				this.getActions = function(){
+				};
+				this.getGames = function(){
+					return this.plateauDeJeu;
+				};
+				this.play = function(x, y, marque){
+					this.plateauDeJeu[i][y].contenu = marque;
+				};
+	
+			}
+
+			function Joueur(){
+			this.Nom;
+			this.Score;
+			}
+	
+
+
+		</script>
+
+	</body>
+
+
+</html>
+
